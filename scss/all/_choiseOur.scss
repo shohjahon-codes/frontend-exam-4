@@ -1,0 +1,116 @@
+
+#choise_our{
+    .container {
+        h4{
+            color: var(--Base-Black, #140A32);
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.96px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.choise_our{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .choise-left{
+        width: 560px;
+
+        p{
+            color: var(--Base-Black, #140A32);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 25.6px */
+            margin-bottom: 30px;
+        }
+
+        ul{
+            width: 469px;
+            display: flex;
+            justify-content: space-between;
+            li{
+                h5{
+                    color: var(--green, #33836E);
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: -0.84px;
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    margin: 0;
+                    color: var(--Base-Black, #140A32);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #choise_our{
+        .container{
+            h4{
+                padding:  0 10px;
+                font-size: 20px;
+            }
+            .choise_our{
+                position: relative;
+                padding:  0 10px;
+                display: grid;
+                grid-template-columns: 360px;
+                grid-template-rows: 247px 180px;
+                z-index: -5;
+                width: 100% !important;
+                .choise-left{
+                    width: 100% !important; 
+                    p{
+                        padding: 0 !important;
+                        width: 100% !important;
+                        margin: 0;
+                        font-size: 14px;
+                        margin-bottom: 25px !important;
+                    }
+
+                    ul{
+                        gap: 0 !important;
+                        justify-content: space-between;
+                        width: 100% !important;
+                        li{
+                            width: 115px !important;
+                            h5{
+                                font-size: 20px !important;
+                            }
+
+                            p{
+                                width: 100% !important;
+                                font-size: 12px !important;
+                            }
+                        }
+                    }
+                }
+
+                .choise-right{
+
+                    img{
+                        width: 360px !important;
+                        height: 247px !important;
+                        object-fit: cover;
+
+                    }
+                }
+            }
+        }
+    }
+}

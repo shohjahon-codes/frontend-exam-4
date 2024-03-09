@@ -1,0 +1,231 @@
+header{
+    z-index: 99999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: fixed;
+    width: 100%;
+    background: white;
+
+    nav{
+        .header-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 40px;
+            padding-bottom: 27px;
+
+            img{
+                width: 221px;
+                height: 38px;
+            }
+
+            .input_header{
+                position: relative;
+                width: 427px;
+                height: 52px;
+                background: #2F2B430A;
+                border-radius: 10px;
+                input{
+                    background: transparent;
+                    width: 100%;
+                    padding: 14px 20px;
+                    font-size: 16px;
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                i{
+                    position: absolute;
+                    right: 5px;
+                    font-size: 25px;
+                    top: 12px;
+                    color: black;
+                    z-index: 99;
+                }
+            }
+
+            button{
+                position: relative;
+                padding: 13px 20px;
+                border: none;
+                border-radius: 10px;
+                padding-left: 45px;
+                cursor: pointer;
+                background: #33836E;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;   
+                line-height: normal;
+                color: white;
+
+                &:hover{
+                    background: #0c331c;
+                    transition: all 0.2s linear;
+                }
+                span{
+                    top: 10px;
+                    left: 10px;
+                    position: absolute;
+                }
+            }
+
+            .header_contact{
+                width:220px;
+                height: 51px;
+                h4{
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+                p{
+                    color: var(--Gray-Medium, rgba(47, 43, 67, 0.50));
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .responsiv{
+            display: none;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .container{
+        max-width: 390px;
+    }
+
+    .header-bottom{
+        display: none !important;
+    }
+
+    header{
+        border-bottom: 1px solid #140a3299;
+        nav{
+            .header-wrapper{
+                display: none;
+            }
+
+            .responsiv{
+                position: relative;
+                padding: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between  ;
+            
+                i{
+                    font-size: 30px;
+                    cursor: pointer;
+                    color: #33836E;
+                }
+
+                div{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    i{
+                        font-size: 25px;
+                        color: #33836E;
+                    }
+                }
+
+                .togle_menu{
+                    position: relative;
+                    left: 0; 
+                    height: 100vh;
+                    width: 100%;
+                    background: white;
+                    z-index: 999;
+                    position: absolute;
+                    top: 0px;
+                    transition: all 0.3s linear;
+                    transform: translateX(-100%);
+
+                    #close_btn{
+                        position: absolute;
+                        right: 20px;
+                        top: 25px
+                    }
+
+                    li{
+                        padding: 15px;
+                        a{
+                            color: black;
+                            font-weight: 600;
+                            font-size: 20px;
+                        }
+
+                        button{
+                            padding: 10px;
+                            border-radius: 10px;
+                            border: none;
+                            a{
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+             
+        }
+    }
+}
+
+.togle{
+    transform: translateX(0) !important;
+    transition: all 0.3s linear;
+}
+
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    align-items: center;
+
+    i{
+        font-size: 25px;
+        color: blue;
+    }
+    li{
+        a{
+            gap: 10px;
+            align-items: center;
+             display: flex;
+            color: black;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            button{
+                cursor: pointer;
+                border-radius: 10px;
+                border: 1px solid #140a3268;
+                background: transparent;
+                padding: 11px 20px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: black;
+                &:hover{
+                    background: #2b327b;
+                    transition: all 0.2s linear;
+                    color: white;
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,166 @@
+.hot_linii{
+    border-radius: 20px;
+    background: var(--green, #33836E);
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    padding: 31px 60px;
+
+    .hot_linii-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 296px;
+        p{
+            color: var(--Base-White, #FFF);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        h5{
+            color: var(--Base-White, #FFF);
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.26px;
+        }
+    }
+
+    .hot_linii-right{
+        width: 501px;
+        h5{
+            color: var(--Base-White, #FFF);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 16px;
+        }
+
+        div{
+            display: flex;
+            gap: 15px;
+            margin-bottom: 22px;
+            div{
+                margin-bottom: 0;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                background: white;
+                border-radius: 10px;
+                input{
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: var(--Base-Black, #140A32);
+                    padding-top: 26px;
+                    outline: none;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-bottom: 10px;
+                    color: var(--Base-Black, #140A32);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                p{
+                    top: 5px;
+                    left: 10px;
+                    position: absolute;
+                    color: var(--Gray-Low, rgba(47, 43, 67, 0.40));
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+
+            button{
+                &:hover{
+                    background: #0c331c;
+                    transition: all 0.2s linear;
+                }
+                color: var(--Base-White, #FFF);
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                border-radius: 10px;
+                border: 1px solid var(--Base-White, #FFF);
+                padding: 16px 36px 18px 36px;
+                background: transparent;
+                cursor: pointer;
+            }
+        }
+
+        p:last-child{
+            a{
+                color: rgba(255, 255, 255, 0.50);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-decoration-line: underline;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #hot_linii{
+        .container{
+            .hot_linii{
+                flex-direction: column;
+                width: 360px;
+                margin: 0 auto;
+                height: 336px;
+                padding: 20px;
+                justify-content: start;
+
+                .hot_linii-left{
+                    width: 100%;
+                   align-items: start !important;
+                    p{
+                        font-size: 18px !important;
+                        margin: 0;
+                    }
+
+                    h5{
+                        font-size: 36px !important;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .hot_linii-right{
+                    width: 100% !important;
+                    h5{
+                        font-size: 16px !important;
+                    }
+
+                    div{
+                        margin: 0;
+                        flex-direction: column;
+                        div{
+                            p{
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

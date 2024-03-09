@@ -1,0 +1,86 @@
+.our_yurist{
+    margin-top: 80px;
+    h5{
+        color: var(--Base-Black, #140A32);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.96px;
+        margin-bottom: 29px;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        li{
+            border-radius: 20px;
+            border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+            display: flex;
+            width: 560px;
+            height: 287px;
+            padding: 20px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            flex-shrink: 0;
+
+            div{
+                display: flex;
+                align-items: center;
+                gap: 25px;
+
+                p{
+                    color: var(--Base-Black, #140A32);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+
+            p{
+                color: var(--Gray-High, rgba(47, 43, 67, 0.70));
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%; /* 21px */
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #our_yurist{
+        .container{
+            .our_yurist{
+                padding:  0 10px;
+                h5{
+                    font-size: 20px !important; 
+                }
+
+                ul{
+                    overflow-x: scroll;
+                    overflow-y: hidden;
+                    flex-wrap: nowrap !important;
+                    width: 100% !important;
+                    li{
+                        width: 319px !important;
+                        height: 344px !important;
+
+                        p{
+                            font-size: 12px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .our_yurist2{
+        display: none;
+    }
+}

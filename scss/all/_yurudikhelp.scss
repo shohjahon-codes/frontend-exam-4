@@ -1,0 +1,152 @@
+#yuridik_help{
+    margin-bottom: 360px;
+    margin-top: 100px;
+    .container{
+        .yuridik_help{
+            margin-bottom: 90px;
+            h4{
+                color: var(--Base-Black, #140A32);
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.96px;
+                margin-bottom: 20px;
+            }
+
+            p{
+                color: var(--Base-Black, #140A32);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                margin-bottom: 20px;
+            }
+        }
+
+        .free_consul{
+            h4{
+                color: var(--Base-Black, #140A32);
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.96px;
+                margin-bottom: 20px;
+            }
+
+            p{
+                color: var(--Base-Black, #140A32);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                margin-bottom: 30px;
+            }
+
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                li{
+                    position: relative;
+                    width: 270px;
+                    height: 180px;
+                    padding: 20px;
+                    border-radius: 20px;
+                    border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+
+                    i{
+                        color: #33836E;
+                        font-size: 30px;
+                        margin-bottom: 15px;
+                    }
+
+                    p{
+                        color: var(--Base-Black, #140A32);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin-bottom: 15px;
+                    }
+
+                    h4{
+                        color: var(--Base-Black, #140A32);
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    a{
+                        position: absolute;
+                        bottom: 10px;
+                        color: var(--green, #33836E);
+                        text-align: center;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #yuridik_help{
+        margin-top: 60px !important;
+        margin-bottom: 40px !important;
+
+        .container{
+            .yuridik_help{
+                padding: 0 20px;
+                width: 100%;
+                h4{
+                    font-size: 20px;
+                }
+
+                p{
+                    font-size: 14px;
+                }
+            }
+            .free_consul{
+                width: 100% !important;
+                padding: 0 4px;
+                width: 100% !important;
+                h4{
+                    padding: 0 16px;
+                    font-size: 20px !important;
+                }
+
+                p{
+                    padding: 0 16px !important;
+                    font-size: 14px;
+                }
+
+                ul{
+                    width: 100% !important;
+                    flex-wrap: wrap;
+                    li{
+                        width: 175px !important;
+                        height: 191px !important;
+                        margin-bottom: 15px;
+
+                        p{
+                            padding: 0 !important;
+                            font-size: 14px !important;
+                        }
+
+                        h4{
+                            padding: 0 !important;
+                            font-size: 18px !important; 
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
